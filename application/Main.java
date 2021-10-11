@@ -1,4 +1,4 @@
-// Erkam Karaca ID: 150118021
+
 // The purpose of this program is making a puzzle game.
 // You have to click on the tile that you want to move and release the mouse to on the tile that is your target tile.
 // Please do not run the game from this class you should run the program from TestForMovement Class.
@@ -217,8 +217,8 @@ public boolean checkLevelCompleted(int level, Pane pane, subclass_ImageView[] no
 	final Image EMPTY = (new Image("application/images/Empty.png"));
 	final Image PIPESTATIC_V = (new Image("application/images/PipeStaticV.png"));
 	final Image PIPESTATIC_H = (new Image("application/images/PipeStaticH.png"));
-	final Image PIPE_H = (new Image("application/images/PipeV.png")); // Kendisi Ters alýyor
-	final Image PIPE_V = (new Image("application/images/PipeH.png")); // Kendisi Ters alýyor
+	final Image PIPE_H = (new Image("application/images/PipeV.png")); // Kendisi Ters alÃ½yor
+	final Image PIPE_V = (new Image("application/images/PipeH.png")); // Kendisi Ters alÃ½yor
 	final Image CURVEDPIPE_00 = (new Image("application/images/CurvedPipe00.png"));
 	final Image CURVEDPIPE_01 = (new Image("application/images/CurvedPipe01.png"));
 	final Image CURVEDPIPE_10 = (new Image("application/images/CurvedPipe10.png"));
