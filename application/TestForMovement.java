@@ -1,4 +1,4 @@
-// Erkam Karaca ID: 150118021
+
 // The purpose of this program is making a puzzle game.
 // You have to click on the tile that you want to move and release the mouse to on the tile that is your target tile.
 // Please run program from this (TestForMovement) class.
@@ -418,7 +418,7 @@ public class TestForMovement extends Main {
 				if (((Math.abs(p.getX() - e.getX()) < 100))
 						&& ((-200 < (p.getY() - e.getY())) && (p.getY() - e.getY()) < -86)) { // 86 for dont to reach // out of border
 					
-					System.out.println("ifin içi");
+					System.out.println("ifin iÃ§i");
 					if (iw.can_Move(iw)) {
 						
 						for (int i = 1; i < 17; i++) { // target node
@@ -519,16 +519,16 @@ public class TestForMovement extends Main {
 				/////////////// About DOWN
 				if (((Math.abs(p.getX() - e.getX()) < 100))
 						&& ((86 < (p.getY() - e.getY())) && (p.getY() - e.getY()) < 200)) {
-					System.out.println("ifin içi");
+					System.out.println("ifin iÃ§i");
 					if (iw.can_Move(iw)) {
-						for (int i = 1; i < 17; i++) { // yerine geçilecek node
+						for (int i = 1; i < 17; i++) { // yerine geÃ§ilecek node
 							int key = 0;
 							if ((nodes[i].getX() == iw.getX()) && (nodes[i].getY() == iw.getY() + 101  && nodes[i].moveOnMe(nodes[i]))
 									&& (p.getY() < 403)) {
 								nodes[i].setY(nodes[i].getY() - 101);
 								key = 1;
 							}
-							if ((p.getY() < 403) && key == 1) { // aþagý gidemesin
+							if ((p.getY() < 403) && key == 1) { // aÃ¾agÃ½ gidemesin
 								iw.setX(iw.getX());
 								iw.setY(iw.getY() + 101);
 								
@@ -630,9 +630,9 @@ public class TestForMovement extends Main {
 				/////////////// About RIGHT
 				if ((86 < (p.getX() - e.getX()) && ((p.getX() - e.getX()) < 200))
 						&& (Math.abs(p.getY() - e.getY()) < 100)) {
-					System.out.println("ifin içi");
+					System.out.println("ifin iÃ§i");
 					if (iw.can_Move(iw)) {
-						for (int i = 1; i < 17; i++) { // yerine geçilecek node
+						for (int i = 1; i < 17; i++) { // yerine geÃ§ilecek node
 							int key = 0;
 							if ((nodes[i].getX() == iw.getX() + 101) && (nodes[i].getY() == iw.getY()  && nodes[i].moveOnMe(nodes[i]))
 									&& (p.getX() < 403)) {
@@ -723,10 +723,10 @@ public class TestForMovement extends Main {
 				//////////////// About LEFT
 				if ((-200 < (p.getX() - e.getX()) && ((p.getX() - e.getX()) < -86))
 						&& (Math.abs(p.getY() - e.getY()) < 100)) {
-					System.out.println("ifin içi");
+					System.out.println("ifin iÃ§i");
 					System.out.println(iw.can_Move(iw));
 					if (iw.can_Move(iw)) {
-						for (int i = 1; i < 17; i++) { // yerine geçilecek node
+						for (int i = 1; i < 17; i++) { // yerine geÃ§ilecek node
 							int key = 0;
 							if ((nodes[i].getX() == iw.getX() - 101) && (nodes[i].getY() == iw.getY())  && nodes[i].moveOnMe(nodes[i])) {
 								nodes[i].setX(nodes[i].getX() + 101);
